@@ -65,7 +65,7 @@ public class Consumer {
                     // API Gateway 로 전송
                     sendKeyToApiGateway(record.value());
                     // Save to MongoDB
-                    //saveToMongoDB(record.value());
+                    saveToMongoDB(record.value());
                 }
             }
         } catch (Exception e) {
